@@ -32,7 +32,7 @@ const middle = function(arr) {
   }
   return result;
 };
-console.log(middle(["hello", "world", "lighthouse"]));
-console.log(middle(['abcde']));
-console.log(middle([40, 45, 50, 52, 53]));
-console.log(middle([4, 8, 12, 16, 20, 24]));
+assertArraysEqual(middle(["hello", "world", "lighthouse"]), ["world"]);
+assertArraysEqual(middle(['abcde']), []);
+assertArraysEqual(middle([40, 45, 50, 52, 53]), [50]);
+assertArraysEqual(middle([4, 8, 12, 16, 20, 24]), [12, 16]);
