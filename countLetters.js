@@ -24,3 +24,4 @@ console.log(word);
 
 assertEqual(word['l'], 1);
 assertEqual(word[' '], undefined);
+assertEqual(word['h'], 4);
