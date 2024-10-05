@@ -24,14 +24,15 @@ const eqObjects = function(obj1, obj2) {
     return false;
   }
   for (const key of key1) {
-    if (obj1[key] !== obj2[key]) {
-      return false;
-    } else if (Array.isArray(obj1[key] && Array.isArray(obj2[key]))) {
+    if (Array.isArray(obj1[key]) && Array.isArray(obj2[key])) {
       if (!eqArrays(obj1[key].sort(), obj2[key].sort())) {
         return false;
       }
+    } else if (obj1[key] !== obj2[key]) {
+      return false;
     }
   }
+
   return true;
 };
 const house1 = {
@@ -43,7 +44,7 @@ const house2 = {
   hasRoof: true,
 };
 console.log(eqObjects(house1, house2));
-assertEqual(eqObjects(house1, house2), false);
+assertEqual(eqObjects(house1, house2), true);
 
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
