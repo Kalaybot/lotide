@@ -1,14 +1,13 @@
 const takeUntil = (array, callback) => {
   const result = [];
 
-  for (const item of array) {
+  for (const item of array) { // loops through the array
     if (!callback(item)) {
       result.push(item);
     } else {
-      break;
+      return result; // stops the loop when callback becomes truthy
     }
   }
-  return result;
 };
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
