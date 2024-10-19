@@ -10,7 +10,7 @@ describe("#head", () =>  {
   it("returns '5' for ['5']", () => {
     assert.strictEqual(head(['5']), '5');
   });
-  it("retuns 'Hello' for ['Hello', 'Lighthouse', 'Labs']", () => {
+  it("returns 'Hello' for ['Hello', 'Lighthouse', 'Labs']", () => {
     assert.strictEqual(head(['Hello', 'Lighthouse', 'Labs']), 'Hello');
   });
 });
