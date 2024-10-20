@@ -48,3 +48,5 @@ const carObjectAgain = {
   color: ["black", "white"],
 };
 assertObjectsEqual(carObject, carObjectAgain);
+
+module.exports = assertObjectsEqual;

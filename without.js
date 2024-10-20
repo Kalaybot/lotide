@@ -39,3 +39,5 @@ assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 
 console.log("All tests passed!");
+
+module.exports = without;

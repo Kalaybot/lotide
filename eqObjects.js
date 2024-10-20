@@ -50,3 +50,5 @@ const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 console.log(eqObjects(shirtObject, anotherShirtObject));
 assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
+
+module.exports = eqObjects;
